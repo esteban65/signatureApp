@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WorkWay</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">WorkWay</string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Cabecera de Navegación</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_add">Añadir Documentos</string>
+    <string name="menu_home">Mis Documentos</string>
+    <string name="menu_signature">Firmas</string>
+    <string name="menu_users">Usuarios</string>
+    <string name="menu_logout">Salir</string>
+
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_share">Compartir</string>
+    <string name="menu_send">Enviar</string>
+
+    <string name="signature_title">Colocar Firma</string>
+    <string name="action_save">Hecho</string>
+    <string name="clear">Limpiar</string>
+
+    <!-- Login / Register -->
+    <string name="register">Registrarse</string>
+    <string name="login">Ingresar</string>
+
+    <string name="register1">Registrate</string>
+    <string name="login1">Ingreso</string>
+
+    <string name="name">Nombre</string>
+    <string name="rank">Seleecionar Rango</string>
+    <string name="mail">Correo Electrónico</string>
+    <string name="pass">Contraseña</string>
+    <string name="worker">Trabajador</string>
+
+    <string name="msg1">¿Ya tienes una cuenta?\ </string>
+    <string name="msg2">¿No tienes una cuenta todavía?\ </string>
+
+</resources>
