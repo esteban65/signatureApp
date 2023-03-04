@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +37,9 @@ public class RegisterActivity extends AppCompatActivity {
     TextView loginn;
 
     String str_rank;
-    CheckBox checkbox;
+    CheckBox checkbox_company;
+    LinearLayout company_sec;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +53,10 @@ public class RegisterActivity extends AppCompatActivity {
         Button register=findViewById(R.id. register);
 
         loginn=findViewById(R.id. loginn);
-        checkbox=findViewById(R.id. checkbox);
+        checkbox_company=findViewById(R.id. checkbox_company);
+
+        final CheckBox checkbox_company = findViewById(R.id.checkbox_company);
+        final LinearLayout company_sec = findViewById(R.id.company_sec);
 
         final EditText email = findViewById(R.id.email);
         final EditText password = findViewById(R.id.password);
@@ -76,7 +82,8 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        /*
+        checkbox_company.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
@@ -90,7 +97,18 @@ public class RegisterActivity extends AppCompatActivity {
 
             }
         });
+        */
 
+        checkbox_company.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(company_sec.getVisibility()==View.VISIBLE){
+                    company_sec.setVisibility(View.GONE);
+                } else {
+                    company_sec.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,53 +119,42 @@ public class RegisterActivity extends AppCompatActivity {
                 String str_name = name.getText().toString();
 
 
-                if(!checkbox.isChecked()){
-                    //checks
-                    if (TextUtils.isEmpty(str_email))
-                    {
-                        email.setError("Email is Required!");
-                    }
-
-                    else if (TextUtils.isEmpty(str_password))
-                    {
-                        password.setError("Password is Empty!");
-                    }else if (TextUtils.isEmpty(str_name))
-                    {
-                        email.setError("Email is Required!");
-                    }
-                    else if (TextUtils.isEmpty(str_rank) || str_rank.equals("Select Rank"))
-                    {
-                        email.setError("Rank is Required!");
-                    } else
-                    {
-                        register( str_email, str_password,str_name,str_rank);
-                    }
-                }else {
-
-
-
-                    if (TextUtils.isEmpty(str_email))
-                    {
-                        email.setError("Email is Required!");
-                    }
-
-                    else if (TextUtils.isEmpty(str_password))
-                    {
-                        password.setError("Password is Empty!");
-                    }
-                    else if (TextUtils.isEmpty(str_name))
-                    {
-                        email.setError("Email is Required!");
-                    }
-                    else
-                    {
-                        register( str_email, str_password,str_name,"worker");
-                    }
-
+                /*if(!checkbox_company.isChecked()){*/
+                //checks
+                if (TextUtils.isEmpty(str_email)) {
+                    email.setError("Email is Required!");
                 }
 
+                else if (TextUtils.isEmpty(str_password)) {
+                    password.setError("Password is Empty!");
+                }else if (TextUtils.isEmpty(str_name)) {
+                    email.setError("Email is Required!");
+                /*}
+                else if (TextUtils.isEmpty(str_rank) || str_rank.equals("Select Rank"))
+                {
+                    email.setError("Rank is Required!");*/
+                } else {
+                    register( str_email, str_password,str_name);//,str_rank);
+                }
+                /*}else {*/
 
 
+
+                if (TextUtils.isEmpty(str_email)) {
+                    email.setError("Email is Required!");
+                }
+
+                else if (TextUtils.isEmpty(str_password)) {
+                    password.setError("Password is Empty!");
+                }
+                else if (TextUtils.isEmpty(str_name)) {
+                    email.setError("Email is Required!");
+                }
+                else {
+                    register( str_email, str_password,str_name);//,"worker");
+                }
+
+                /*}*/
 
             }
         });
@@ -167,7 +174,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     //register user
-    private void register(final String email, final String password,String name, String rank)
+    private void register(final String email, final String password,String name)//, String rank)
     {
 
         progressDialog.show();
@@ -188,10 +195,10 @@ public class RegisterActivity extends AppCompatActivity {
                             //add values in database
                             HashMap<String, Object> hashMap = new HashMap<>();
                             hashMap.put("id", userid);
-                            hashMap.put("imageurl", "https://www.linkpicture.com/q/user_oiq1.png");
+                            /*hashMap.put("imageurl", "https://www.linkpicture.com/q/user_oiq1.png");*/
                             hashMap.put("email", email);
                             hashMap.put("name", name);
-                            hashMap.put("rank", rank);
+                            /*hashMap.put("rank", rank);*/
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

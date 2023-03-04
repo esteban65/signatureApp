@@ -372,8 +372,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
+        switch (id){
+            case R.id.nav_home:
+                // Handle the camera action
+                break;
+            case R.id.nav_signatures:
+                mHandler.postDelayed(mUpdateTimeTask, 100);
+                break;
+            case R.id.nav_company:
+                Intent intent= new Intent(getApplicationContext(),CompaniesActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_user:
+                Intent intent1= new Intent(getApplicationContext(),AllUsersActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.nav_upload:
+                Intent intent2= new Intent(getApplicationContext(),UploadFilesActivity.class);
+                startActivity(intent2);
+                break;
+            case R.id.nav_login:
+                FirebaseAuth.getInstance().signOut();
+                Intent intent3= new Intent(getApplicationContext(),RegisterActivity.class);
+                startActivity(intent3);
+                finish();
+                break;
+        }
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+        /*if (id == R.id.nav_home) {
         } else if (id == R.id.nav_signatures) {
 
             mHandler.postDelayed(mUpdateTimeTask, 100);
@@ -392,10 +420,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             Intent intent= new Intent(getApplicationContext(),UploadFilesActivity.class);
             startActivity(intent);
-        }
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+        }*/
     }
 
     private Runnable mUpdateTimeTask = new Runnable() {
@@ -750,20 +775,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     static class Viewholder extends RecyclerView.ViewHolder {
 
         TextView fileItemTextview,date,genItemTextview,statusItemTimeTextView;
-
         ImageView fileImageView;
-
         RelativeLayout rl;
-
         Button approve,reject;
 
 
         public Viewholder(@NonNull View itemView)
         {
             super(itemView);
-
             fileItemTextview = itemView.findViewById(R.id.fileItemTextview);
-
             statusItemTimeTextView = itemView.findViewById(R.id.statusItemTimeTextView);
 
             date = itemView.findViewById(R.id.dateItemTimeTextView);
@@ -772,7 +792,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             approve = itemView.findViewById(R.id.approve);
             reject = itemView.findViewById(R.id.reject);
             genItemTextview = itemView.findViewById(R.id.genItemTextview);
-
 
         }
     }

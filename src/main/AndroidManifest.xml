@@ -24,6 +24,9 @@
             android:name=".AllUsersActivity"
             android:exported="false" />
         <activity
+            android:name=".CompaniesActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerViewActivity"
             android:exported="true" />
         <activity

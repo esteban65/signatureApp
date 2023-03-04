@@ -13,39 +13,39 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_40sdp"
-            app:cardBackgroundColor="#ededed"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            app:cardCornerRadius="@dimen/_10sdp"
-            app:cardElevation="@dimen/_5sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
             <ImageView
-                android:layout_width="@dimen/_70sdp"
-                android:layout_height="@dimen/_70sdp"
-                android:layout_margin="@dimen/_5sdp"
-                android:src="@drawable/ic_workway" />
+                android:id="@+id/imageView2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_workway"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-        </androidx.cardview.widget.CardView>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/top"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_50sdp"
-            android:gravity="center"
-            android:text="@string/app_name"
-            android:textColor="#000000"
-            android:textSize="@dimen/_12sdp"
-            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -93,7 +93,8 @@
                 android:layout_centerVertical="true"
                 android:padding="7dp"
                 android:paddingEnd="@dimen/medium"
-                android:src="@drawable/user_icon" />
+                android:src="@drawable/user_icon"
+                app:tint="#576f93" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -130,12 +131,13 @@
                 android:layout_centerVertical="true"
                 android:padding="7dp"
                 android:paddingEnd="@dimen/medium"
-                android:src="@drawable/pass_icon" />
+                android:src="@drawable/pass_icon"
+                app:tint="#576f93" />
         </RelativeLayout>
 
         <TextView
             android:id="@+id/forgotButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="16dp"
@@ -161,34 +163,35 @@
             android:textSize="@dimen/_11sdp"
             android:textStyle="bold" />
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/register"
+            android:layout_width="match_parent"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/_30sdp"
-
-        android:id="@+id/register"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/msg2"
-            android:textColor="#000000"
-            android:textSize="@dimen/_12sdp" />
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:gravity="center">
 
-        <TextView
-            android:id="@+id/registerr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/register"
-            android:textColor="#3172E3"
-            android:textSize="@dimen/_12sdp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg2"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/registerr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="#3172E3"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
     </LinearLayout>
-
 
 
 </RelativeLayout>

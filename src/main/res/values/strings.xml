@@ -1,17 +1,22 @@
 <resources>
-    <string name="app_name">WorkWay</string>
+    <string name="app_name" translatable="false">WorkWay</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">WorkWay</string>
-    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_title" translatable="false">WorkWay</string>
+    <string name="nav_header_subtitle">Your work operations near</string>
     <string name="nav_header_desc">Cabecera de Navegación</string>
     <string name="action_settings">Settings</string>
 
+    <string name="menu_company">Companies</string>
     <string name="menu_add">Añadir Documentos</string>
     <string name="menu_home">Mis Documentos</string>
     <string name="menu_signature">Firmas</string>
-    <string name="menu_users">Usuarios</string>
-    <string name="menu_logout">Salir</string>
+    <string name="menu_users">Users</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="companies_join">Join a company</string>
+    <string name="join">Join</string>
+    <string name="connect">Connect</string>
 
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_settings">Configuración</string>
@@ -23,19 +28,41 @@
     <string name="clear">Limpiar</string>
 
     <!-- Login / Register -->
-    <string name="register">Registrarse</string>
-    <string name="login">Ingresar</string>
+    <string name="register">Sign Up</string>
+    <string name="login">Login</string>
 
     <string name="register1">Registrate</string>
     <string name="login1">Ingreso</string>
 
-    <string name="name">Nombre</string>
-    <string name="rank">Seleecionar Rango</string>
-    <string name="mail">Correo Electrónico</string>
-    <string name="pass">Contraseña</string>
-    <string name="worker">Trabajador</string>
+    <string name="name">Full Name</string>
+    <string name="rank">Rank</string>
+    <string name="mail">Email</string>
+    <string name="pass">Password</string>
+    <string name="company">Company</string>
+    <string name="companies">Companies</string>
+    <string name="companyname">Company Name</string>
+    <string name="occupation">Occupation</string>
 
-    <string name="msg1">¿Ya tienes una cuenta?\ </string>
-    <string name="msg2">¿No tienes una cuenta todavía?\ </string>
+    <!-- Industries -->
+    <string name="industry1">Agriculture &amp; Forestry</string>
+    <string name="industry2">Arts, Entertainment, &amp; Recreation</string>
+    <string name="industry3">Construction</string>
+    <string name="industry4">Education Services</string>
+    <string name="industry5">Finance &amp; Insurance</string>
+    <string name="industry6">Health Care &amp; Social Assistance</string>
+    <string name="industry7">Hospitality &amp; Tourism</string>
+    <string name="industry8">Information Technology</string>
+    <string name="industry9">Manufacturing</string>
+    <string name="industry10">Mining</string>
+    <string name="industry11">Professional, Scientific, &amp; Technical Services</string>
+    <string name="industry12">Public Administration</string>
+    <string name="industry13">Real Estate, Rental, &amp; Leasing</string>
+    <string name="industry14">Retail Trade</string>
+    <string name="industry15">Transportation &amp; Warehousing</string>
+    <string name="industry16">Utilities</string>
+    <string name="industry17">Wholesale Trade</string>
+
+    <string name="msg1">Already have an account?&#160;</string>
+    <string name="msg2">Don\'t have an account yet?&#160;</string>
 
 </resources>

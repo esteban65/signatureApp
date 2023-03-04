@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Please wait....");
 
         auth = FirebaseAuth.getInstance();
-        Button login=findViewById(R.id. login);
+        Button login=findViewById(R.id.login);
         TextView registerr = findViewById(R.id.registerr);
 
         final EditText email = findViewById(R.id.email);

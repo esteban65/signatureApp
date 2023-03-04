@@ -3,22 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable-anydpi/add_folder_icon.xml" value="0.3675" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable-anydpi/ic_company_black_24dp.xml" value="0.297" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable-anydpi/ic_search_black_24dp.xml" value="0.3675" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable-v24/blue_circularbutton.xml" value="0.3355" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable-v24/button.xml" value="0.3355" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable/btn_apprive.xml" value="0.3355" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable/custom_search_bg.xml" value="0.3675" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable/ic_folder_black_24dp.xml" value="0.3675" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable/ic_workway.xml" value="0.3675" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.3675" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout-v28/item_company.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_all_users.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_companies.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_digital_signature.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_free_hand.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_recycler_view.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_register.xml" value="0.33" />
-        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_signature.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_signature.xml" value="0.25" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_signed_by.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/activity_upload_files.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/app_bar_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/content_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/element_prop_menu_layout.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/file_alert_dialog.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/item_company.xml" value="0.33" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/item_sign.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/item_user.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lukes/AndroidStudioProjects/SignatureApp/app/src/main/res/layout/mainitemgrid.xml" value="0.358695652173913" />

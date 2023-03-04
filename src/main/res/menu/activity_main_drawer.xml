@@ -4,10 +4,17 @@
     tools:showIn="navigation_view">
 
         <item
+            android:id="@+id/nav_company"
+            android:checkable="true"
+            android:checked="true"
+            android:icon="@drawable/ic_company_black_24dp"
+
+            android:title="@string/menu_company" />
+        <item
             android:id="@+id/nav_upload"
             android:checkable="true"
             android:checked="true"
-            android:icon="@drawable/ic_folder_black_24dp"
+            android:icon="@drawable/add_folder_icon"
 
             android:title="@string/menu_add" />
         <item
